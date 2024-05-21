@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="galeri.html">MyGalery</a></li>
+                <li><a href="folio.html">PortoFolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="https://www.instagram.com/dwulantr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6285727344161" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header>
+    <main>
+        <h1>Selamat Datang di Galeri Saya!</h1>
+        <p>Di halaman ini, Anda akan menemukan koleksi video dan foto yang menggambarkan pengalaman berharga saya selama menjalani magang dan mengikuti berbagai mata kuliah di Universitas Negeri Yogyakarta. Melalui galeri ini, saya ingin berbagi perjalanan akademis dan profesional saya, serta berbagai momen yang telah memperkaya pengetahuan dan keterampilan saya.</p>
+        
+        <div class="gallery-section">
+            <h2>Pengalaman Magang</h2>
+            <p>Selama magang, saya berkesempatan untuk terlibat dalam berbagai proyek menarik yang memungkinkan saya untuk menerapkan teori yang telah saya pelajari di kelas ke dalam praktik nyata. Video dan foto di bagian ini akan menunjukkan bagaimana saya berkontribusi dalam lingkungan kerja profesional dan mengembangkan keterampilan praktis yang esensial.</p>
+            <div class="gallery">
+                <img src="m1.jpeg">
+                <img src="m2.jpeg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7Q-nkmWVszg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="gallery-section">
+            <h2>Aktivitas Kelas</h2>
+            <p>Di bagian ini, Anda akan melihat dokumentasi dari berbagai kegiatan kelas, diskusi, dan presentasi yang telah saya lakukan selama studi di Universitas Negeri Yogyakarta. Setiap gambar dan video menceritakan kisah tentang pembelajaran, kolaborasi, dan pencapaian akademis saya.</p>
+            <div class="gallery">
+                <img src="plc1.jpeg">
+                <img src="plc2.jpeg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yqlkj6Mog9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <p>TERIMAKASIH SUDAH BERKUNJUNG DI GALERI SAYA</p>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(function(link) {
+             link.addEventListener("click", function(event) {
+            // Mencegah aksi default dari tautan
+            event.preventDefault();
+            
+            // Hapus kelas 'nav-link-clicked' dari semua tautan
+            navLinks.forEach(function(link) {
+                link.classList.remove("nav-link-clicked");
+            });
+
+            // Tambahkan kelas 'nav-link-clicked' ke tautan yang diklik
+            this.classList.add("nav-link-clicked");
+
+            // Arahkan browser ke halaman yang sesuai dengan href dari tautan yang diklik
+            var href = this.getAttribute("href");
+            setTimeout(function() {
+                window.location.href = href;
+            }, 500); // Menggunakan timeout untuk memberikan efek transisi sebelum berpindah halaman
+                 });
+            });
+        });
+    </script>
+</body>
+</html>

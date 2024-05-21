@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="galeri.html">MyGalery</a></li>
+                <li><a href="folio.html">PortoFolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="https://www.instagram.com/dwulantr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6285727344161" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header>
+    <main> 
+        <h1>Selamat Datang di Halaman Porto Folio Saya!</h1> 
+        <h3>Dwi Wulan Tresmi Rahayu</h3>
+            <div class="column2">
+                <div class="sapaan">
+        <p>Saya adalah mahasiswa S1 Teknik Elektro dengan minat yang mendalam pada pengembangan sistem berbasis teknologi terbaru. Melalui studi dan proyek yang saya kerjakan,
+             saya telah mendapatkan pengalaman berharga dalam merancang dan mengimplementasikan berbagai sistem elektronik yang inovatif. Portofolio ini mencakup beberapa
+              proyek signifikan yang telah saya selesaikan, menunjukkan keterampilan saya dalam teknik elektro dan pemrograman. Saya percaya bahwa setiap proyek yang telah 
+              saya kerjakan memberikan kontribusi nyata terhadap kemajuan teknologi dan peningkatan kualitas hidup. Terima kasih telah meluangkan waktu untuk mengunjungi portofolio saya.</p>
+                    <h2>Proyek 1: Sistem Monitoring Real-time untuk Kereta Hybrid PNM</h2>
+                    <p>Proyek ini, yang merupakan bagian dari Project Matching Fund UNY tahun 2023, adalah kolaborasi dengan PT. Rekaindo Global Jasa. Kami mengembangkan inovasi sistem monitoring real-time untuk meningkatkan pemantauan kondisi kereta hybrid PNM. Sistem ini memanfaatkan 
+                        Message Queueing Telemetry Transport (MQTT) Broker untuk memberikan akses cepat dan mudah melalui perangkat seluler dan komputer.</p>
+                    <p>Kemampuan untuk memantau berbagai parameter krusial seperti mesin generator, sistem propulsi, dan kecepatan kereta secara real-time. Website ini dapat Meningkatkan standar pemeliharaan dan keamanan kereta, serta kenyamanan penumpang.</p>
+                    <p>Teknologi yang digunakan adalah MQTT Broker dengan broker.hivemq.com, memanfaatkan PLC (Programmable Logic Controller) dan website ini dapatMenampilkan data dalam bentuk angka, gambar, dan grafik sehingga dapat memudahkan dalam monitoring kereta.
+                        Data dari berbagai parameter diunggah ke basis data melalui protokol MQTT, kemudian diterima dan ditampilkan oleh website dalam format yang mudah dipahami. Hal ini memungkinkan pengguna untuk memantau kondisi kereta dengan efisien dan praktis.</p>
+                    <h2>Proyek 2: HMI Interface Pompa Air Berbasis Haiwell Cloud SCADA</h2>
+                    <p>Proyek ini melibatkan pembuatan Human Machine Interface (HMI) untuk sistem pompa air menggunakan software Haiwell Cloud SCADA versi 3.36.9.8. Kami mengintegrasikan PLC Haiwell IOT A8=E dengan protokol MQTT dan menyimpan data dalam basis data MySQL.</p>
+                    <p>Desain HMI yang mudah dipahami dan dioperasikan, memungkinkan pengguna merespons perubahan status dengan cepat. Dilengkapi dengan sistem notifikasi untuk tegangan dan arus yang berada di luar batas normal. </p>
+                    <p>Program ini menghubungkan perangkat dalam jaringan dengan kecepatan dan keandalan tinggi, memungkinkan pertukaran data yang efisien. Datalogger menyimpan data untuk analisis jangka panjang, dan sistem notifikasi memberikan peringatan segera untuk kondisi listrik yang tidak sesuai.</p>
+                    <h2>Proyek 3: Sistem Deteksi Kebakaran Berbasis IoT</h2>
+                    <p>Proyek ini merancang sistem deteksi kebakaran menggunakan sensor api, sensor suhu DHT11, dan sensor asap MQ-2 dengan Node MCU sebagai mikrokontroler. Sistem ini memanfaatkan aplikasi Blynk untuk memonitor dan mengirimkan notifikasi ke perangkat Android.</p>
+                    <p>Sensor bekerja independen sehingga jika salah satu sensor rusak, sistem tetap berfungsi. Sistem ini Mengirim notifikasi ke perangkat Android dan menampilkan data sensor secara langsung melalui Blynk. Dan juga memberikan peringatan suara ketika terdeteksi kebakaran.</p>
+                <p>Sistem mengirimkan data sensor ke aplikasi Blynk dan membunyikan alarm ketika terdeteksi kebakaran. Hasil uji coba menunjukkan sistem berjalan dengan baik dan efektif dalam mendeteksi kebakaran.</p>
+            <p>Portofolio ini adalah refleksi dari perjalanan akademik dan profesional saya di bidang Teknik Elektro. Setiap proyek yang disajikan di sini menunjukkan dedikasi saya terhadap inovasi dan peningkatan sistem teknologi yang bermanfaat bagi masyarakat. Saya berharap bisa terus berkontribusi dan 
+                berkembang dalam bidang ini, serta menyambut kesempatan untuk bergabung dalam proyek-proyek masa depan yang menantang dan inspiratif. Terima kasih telah mengunjungi portofolio saya.</p>    
+            </div>
+            </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(function(link) {
+             link.addEventListener("click", function(event) {
+            // Mencegah aksi default dari tautan
+            event.preventDefault();
+            
+            // Hapus kelas 'nav-link-clicked' dari semua tautan
+            navLinks.forEach(function(link) {
+                link.classList.remove("nav-link-clicked");
+            });
+
+            // Tambahkan kelas 'nav-link-clicked' ke tautan yang diklik
+            this.classList.add("nav-link-clicked");
+
+            // Arahkan browser ke halaman yang sesuai dengan href dari tautan yang diklik
+            var href = this.getAttribute("href");
+            setTimeout(function() {
+                window.location.href = href;
+            }, 500); // Menggunakan timeout untuk memberikan efek transisi sebelum berpindah halaman
+                 });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+header  {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.contact a {
+    margin-left: 10px;
+    color: #0feee7; /* Ganti dengan warna ikon yang sesuai */
+}
+
+.text {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.sapaan {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.photo {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 75px;
+    margin-right: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 75px;
+}
+
+.columns {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.columns2 {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.column1 {
+    flex: 2;
+    margin: 0 10px;
+}
+.column2 {
+    flex: 1;
+    margin: 0 10px;
+}
+.skill {
+    margin-bottom: 20px;
+}
+.level {
+    display: flex;
+    margin-top: 5px;
+}
+.bar {
+    width: 30px;
+    height: 10px;
+    background-color: green;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+.level.level-4 .bar:nth-child(n+5),
+.level.level-3 .bar:nth-child(n+4),
+.level.level-2 .bar:nth-child(n+3),
+.level.level-1 .bar:nth-child(n+2) {
+    background-color: #ddd; /* Set bars beyond level to a different color */
+}
+.gallery-section {
+    margin: 20px 0;
+}
+.gallery-section h2 {
+    margin-bottom: 15px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img, .gallery video {
+    margin: 10px;
+    max-width: 300px;
+    border: 2px solid #333;
+}
+.contact{
+    margin: 0 15px;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 2em;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    max-width: 600px; 
+}
+.projects-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.project2{
+    margin-left: 20px;
+}
+
+
+.project img {
+    width: 25%;
+    border-radius: 5px;
+}
+
+.project h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+.nav-link-clicked {
+    color:  #0feee7; 
+}
+
+

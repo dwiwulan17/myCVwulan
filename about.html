@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="galeri.html">MyGalery</a></li>
+                <li><a href="folio.html">PortoFolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="https://www.instagram.com/dwulantr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6285727344161" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="photo">
+                <img src="diganti.jpg" alt="My Photo">
+            </div>
+            <div class="text">
+                <h3>Selamat datang di halaman tentang diri saya!</h3>
+            <p>Saya Wulan, mahasiswa S1 Teknik Elektro 2021, UNY. Selama bertahun-tahun, saya telah mengasah keterampilan saya dalam pemrograman Python, 
+                pengembangan web, dan sistem PLC. Perjalanan saya dibentuk oleh komitmen untuk terus belajar dan dorongan untuk unggul dalam setiap proyek yang saya kerjakan. Saya termasuk orang 
+                 yang mudah beradaptasi dengan lingkungan baru dan menyukai tantangan untuk mengasah kemampuan saya. Dengan pengalaman saya 
+                 di perkuliahan, magang, dan selama bekerja paruh waktu, saya yakin bahwa saya dapat bekerja baik dalam tim maupun secara mandiri.</p>
+            </div>
+        </div>
+        <div class="columns2">
+            <div class="column2">
+                <div class="sapaan">
+                    <h1>Data Diri</h1>
+                    <p>Nama 		: Dwi Wulan Tresmi R.</p>
+                    <p>Jenis kelamin  : Perempuan</p>
+                    <p>Tempat lahir   : Bantul</p>
+                    <p>Tanggal lahir  : 17 Sep 2002</p>
+                    <p>Status         : Mahasiswi</p>
+                    <p>Tinggi badan   : 160 cm</p>
+                    <p>Berat badan    :  45 kg</p>
+                    <p>Alamat         : Prancak Weden, Sawit, Panggungharjo, Sewon, Bantul.</p>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="sapaan">
+                <h1>Riwayat Pendidikan</h1>
+                <p>UNIVERSITAS NEGERI YOGYAKARTA</p>
+                <p>SMA NEGERI 1 SEWON</p>
+                <p>SMP NEGERI 3 SEWON</p>
+                <p>SD NEGERI SAWIT  </p>
+                <h2>Skills</h2>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="level level-4">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Web Developer</p>
+                    <div class="level level-4">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>PLC</p>
+                    <div class="level level-3">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="sapaan">
+                <h1>Riwayat Organisasi</h1>
+                <p>Himpunan Mahasiswa Elektro 2021/2022</p>
+                <p>Anggota Inti Karang Taruna Desa</p>
+                <p>PMR 2019/2020 di SMA</p>
+                <h1>Riwayat Pekerjaan</h1>
+                <p>Magang di PT.Rekaindo</p>
+                <p>De Ngokow Cofee And Tea</p>
+                <p>outlet salad gurt</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(function(link) {
+             link.addEventListener("click", function(event) {
+            // Mencegah aksi default dari tautan
+            event.preventDefault();
+            
+            // Hapus kelas 'nav-link-clicked' dari semua tautan
+            navLinks.forEach(function(link) {
+                link.classList.remove("nav-link-clicked");
+            });
+
+            // Tambahkan kelas 'nav-link-clicked' ke tautan yang diklik
+            this.classList.add("nav-link-clicked");
+
+            // Arahkan browser ke halaman yang sesuai dengan href dari tautan yang diklik
+            var href = this.getAttribute("href");
+            setTimeout(function() {
+                window.location.href = href;
+            }, 500); // Menggunakan timeout untuk memberikan efek transisi sebelum berpindah halaman
+                 });
+            });
+        });
+    </script>
+</body>
+</html>
